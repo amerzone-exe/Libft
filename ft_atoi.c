@@ -6,13 +6,13 @@
 /*   By: jpiquet <jocelyn.piquet1998@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 17:15:54 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/01/27 15:38:42 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/01/27 15:50:23 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	void check_limits(long long n)
+static void	check_limits(long long n)
 {
 	if (n > INT_MAX || n < INT_MIN)
 	{
