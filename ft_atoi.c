@@ -6,13 +6,13 @@
 /*   By: jpiquet <jocelyn.piquet1998@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 17:15:54 by jpiquet           #+#    #+#             */
-/*   Updated: 2025/01/24 11:44:29 by jpiquet          ###   ########.fr       */
+/*   Updated: 2025/01/27 15:38:42 by jpiquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	void check_limits(int n)
+static	void check_limits(long long n)
 {
 	if (n > INT_MAX || n < INT_MIN)
 	{
@@ -23,9 +23,9 @@ static	void check_limits(int n)
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	n;
-	int	sign;
+	int			i;
+	long long	n;
+	int			sign;
 
 	i = 0;
 	n = 0;
@@ -44,5 +44,5 @@ int	ft_atoi(const char *nptr)
 		check_limits(n);
 		i++;
 	}
-	return (n * sign);
+	return ((int)n * sign);
 }
