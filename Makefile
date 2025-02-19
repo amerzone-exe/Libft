@@ -6,7 +6,7 @@
 #    By: jpiquet <jocelyn.piquet1998@gmail.com>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/06 11:32:07 by jpiquet           #+#    #+#              #
-#    Updated: 2025/01/24 15:40:25 by jpiquet          ###   ########.fr        #
+#    Updated: 2025/02/19 12:52:53 by jpiquet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,7 +75,6 @@ SRC =		ft_strlen.c \
 			get_next_line/get_next_line.c \
 			get_next_line/get_next_line_utils.c
 
-#OBJ = $(SRC:.c=.o)
 OBJ = $(patsubst %.c,$(OBJDIR)/%.o,$(SRC))
 
 all : $(NAME)

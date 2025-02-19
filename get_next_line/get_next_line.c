@@ -72,7 +72,7 @@ static char	*read_the_file(int fd, char *store, char *buf)
 			return (NULL);
 		}
 		buf[byte_read] = '\0';
-		store = ft_strjoin(store, buf);
+		store = ft_strjoin_custom(store, buf);
 		if (!store)
 			return (NULL);
 	}
